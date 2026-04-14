@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Perfil de Aplicante</title>
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="mb-3" align="center">Validación de Aplicante</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="formularioAplicacion">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Ej. Jonathan Flamenco">
+                            </div>
+                            <div class="mb-3">
+                                <label for="edad" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="edad" name="edad" required min="0" placeholder="Ej. 28">
+                            </div>
+                            <div class="mb-3">
+                                <label for="sueldo" class="form-label">Sueldo pretendido ($)</label>
+                                <input type="text" inputmode="decimal" class="form-control" id="sueldo" name="sueldo" required placeholder="Ej. 600.00">
+                        </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Procesar Aplicación</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/sweetalert2.all.min.js"></script>
+
+    <script src="valida_entradas.js"></script>
+    <script src="controladorAJAX.js"></script>
+        
+    </script>
+</body>
+</html>
