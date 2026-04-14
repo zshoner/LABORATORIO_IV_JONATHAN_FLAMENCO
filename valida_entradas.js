@@ -13,10 +13,10 @@ $(document).ready(function() {
             });
            
             $('#edad').on('input', function() {
-                // 1. Quitar cualquier cosa que no sea número
+                
                 let valor = this.value.replace(/[^0-9]/g, '');
                 
-                // 2. Eliminar ceros al inicio (Ej: "0025" se convierte en "25")
+               
                 this.value = valor.replace(/^0+/, '');
             });
    
